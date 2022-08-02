@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek chauhan : Creative web developer | UI / UX designer | Marketing expart </title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <link href="image/my_img.jpg" rel="icon" style="border-radius:50%;">
+    <link href="image/my_img.jpg" rel="apple-touch-icon" style="border-radius:50%;">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Alegreya', serif;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background: url(image/bg.png) no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+        }
+
+        .container h2 {
+            font-size: 102px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 5px 5px 5px #000,
+                -5px -5px 2px #000;
+            letter-spacing: 10px;
+        }
+
+        .container p {
+            font-size: 42px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 0px rgb(0, 0, 0),
+                -2px -2px 0px rgb(0, 0, 0);
+            letter-spacing: 2px;
+        }
+
+        .container a {
+            margin-top: 10px;
+            padding: 10px;
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            text-shadow: 2px 2px 5px #000;
+            box-shadow: -4px -4px 5px rgb(0, 0, 0),
+                 inset 4px 4px 5px rgba(0,0,0,.05),
+                 inset  -4px -4px 5px rgb(0, 0, 0),
+                 4px 4px 5px rgba(0,0,0,.05);
+            border-radius: 10px;
+            letter-spacing: 2px;
+            transition: all 0.2s linear;
+        }
+        .container a:hover {
+           color: #fff;
+           text-shadow: 2px 2px 0px rgb(0, 0, 0),
+                -2px -2px 0px rgb(0, 0, 0);
+            background: #fff;    
+            box-shadow: none;
+            letter-spacing: 4px;
+        }
+        @media (max-width: 500px) {
+            .container h2 {
+                margin-left: 20px;
+                font-size: 72px;
+            }
+            .container p {
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>hello !</h2>
+        <p> I am <span class="typing"></span></p>
+        <a href="http://abhishek01web.epizy.com/">Click to continue...</a>
+    </div>
+
+    <script>
+        var typed = new Typed(".typing", {
+            strings: ["Abhishek chauhan", "Student", "Developer", "Blogger", "Designer", "Freelancer"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+        setTimeout(() => {
+            // location.replace("http://abhishek01web.epizy.com/");
+        }, 17000);
+    </script>
+</body>
+
+</html>
